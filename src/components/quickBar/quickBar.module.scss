@@ -1,0 +1,22 @@
+
+.onlineConsult {
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20;
+    top: 40%;
+    right: 5%;
+    position: fixed;
+    z-index: 9;
+
+    .imgClass{
+        width: 35px;
+        height: 35px;
+        padding: 5;
+        cursor: pointer;
+    }
+}
+
+

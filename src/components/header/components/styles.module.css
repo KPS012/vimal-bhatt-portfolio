@@ -1,0 +1,58 @@
+.logo {
+  display: flex;
+  cursor: pointer;
+}
+
+.copyright{
+  margin: 0px;
+  transition: all 0.5s cubic-bezier(0.80, 0, 0.24, 1);
+  color: #ffff;
+  font-weight: 500; 
+}
+
+.name {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 5px;
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #ffff;
+  font-weight: 500; 
+}
+
+.name span{
+  position: relative;
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.name span:nth-of-type(2) {
+  padding-left: 0.3em;
+}
+
+.name span:nth-of-type(3) {
+  position: absolute;
+  left: 110px;
+  padding-left: 0.6em;
+}
+
+.logo:hover .copyright {
+  transform: rotate(360deg);
+}
+
+.logo:hover .name {
+  padding-right: 40px;
+}
+
+.logo:hover .codeBy {
+  transform: translateX(-120%);
+}
+
+.logo:hover .vimal {
+  transform: translateX(-65px);
+}
+
+.logo:hover .bhatt {
+  transform: translateX(-65px);
+}
+  

@@ -1,0 +1,24 @@
+.outerM{
+  position: relative;
+  display: flex;
+  height: 70vh;
+
+  .marqueeContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    top: calc(40vh - 100px);
+  }
+  .marquee {
+    display: flex;
+    white-space: nowrap;
+    will-change: transform;
+
+    h1 {
+      font-size: 11vw;
+      font-weight: 400;
+      color: white;
+      margin-right: 2rem;
+    }
+  }
+}

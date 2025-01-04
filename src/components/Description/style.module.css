@@ -1,0 +1,38 @@
+.outerDis {
+    width: 100vw;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Optional: Add a background for better visibility */
+    margin-top: 2vw;
+    background-color: #ffff;
+}
+
+.innterDis {
+    width: 1200px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.description, .description2{
+    position: relative;
+    color: #141516;
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+
+.description{
+    margin-top: 10vw;
+}
+
+.description2{
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+}
+
+
+.description p,
+.description2 p {
+    margin: 0px;
+    position: relative;
+}
