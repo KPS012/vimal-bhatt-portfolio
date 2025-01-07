@@ -5,7 +5,7 @@ import styles from './style.module.scss';
 import gsap from 'gsap';
 import MagBtn from '../Magnetic/magButton';
 
-export default function Rounded({ children, backgroundColor = "#28a61b", ...attributes }) {
+export default function WhatsAppBtn({ children, backgroundColor = "#28a61b", ...attributes }) {
   const circle = useRef(null);
   let timeline = useRef(null);
   let timeoutId = null;

@@ -5,7 +5,24 @@ import { useTransform, motion, useScroll } from 'framer-motion';
 import { useRef } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 
-const Card = ({i, name, work, title, l1, d1, l2, d2, src, url, color, progress, range, targetScale}:any) => {
+interface CardProps {
+  i: number;
+  name: string;
+  work: string;
+  title: string;
+  l1: string;
+  d1: string;
+  l2: string;
+  d2: string;
+  src: string;
+  url: string;
+  color: string;
+  progress: number;
+  range: [number, number];
+  targetScale: number;
+}
+
+const Card: React.FC<CardProps> = ({i, name, work, title, l1, d1, l2, d2, src, url, color, progress, range, targetScale}:any) => {
 
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -23,14 +40,14 @@ const Card = ({i, name, work, title, l1, d1, l2, d2, src, url, color, progress, 
           className={styles.card}
         > 
           <a href={url} className='flex flex-col justify-center items-center'>
-              <div className="">
+              <div className="w-full">
                 <div className="flex justify-between pb-4 border-b">
-                  <h4 className="font-[600] ">{name}</h4>
-                  <span className="font-[600] ">{work}</span>
+                  <h4 className="font-[600] text-[#ffff]">{name}</h4>
+                  <span className="font-[600] text-[#ffff]">{work}</span>
                 </div>
 
                 <div className="my-4 flex justify-between items-start">
-                  <h2 className="w-[90%] text-[4vh] font-[600]">{title}</h2>
+                  <h2 className="w-[90%] text-[4vh] font-[600] text-[#ffff]">{title}</h2>
                   <FaArrowRight className={styles.arrowIcons} />
                 </div>
                 

@@ -7,8 +7,8 @@ interface H1CardProps {
 
 const H1Card: React.FC<H1CardProps> = ({ H1, subHeading}) => {
   return (
-    <div className="text-[#141516] w-[100%]">
-        <span className="text-sm uppercase font-[600] text-[#141516]">{subHeading}</span>
+    <div className="text-[#ffff] w-[100%]">
+        <span className="text-sm uppercase font-[600] text-[#ffff]">{subHeading}</span>
         <h1 className="text-[5vh] font-[600]">{H1}</h1>
     </div>
   );

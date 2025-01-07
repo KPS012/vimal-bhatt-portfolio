@@ -1,4 +1,4 @@
-'use client';
+import Link from 'next/link';
 import styles from './styles.module.css';
 import Magnetic from '@/common/Magnetic/magButton'
 
@@ -6,7 +6,7 @@ export default function Logo() {
     return (
         
         <Magnetic>
-            <a href="/">
+            <Link href="/">
                 <div className={styles.logo}>
                     <p className={styles.copyright}>©</p>
                     <div className={styles.name}>
@@ -15,7 +15,7 @@ export default function Logo() {
                         <span className={styles.bhatt}>Bhatt</span>
                     </div>
                 </div>
-            </a>
+            </Link>
         </Magnetic>
     )
 }

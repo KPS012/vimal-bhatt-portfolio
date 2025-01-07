@@ -6,9 +6,9 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { slideUp } from './components/animation';
 import { motion } from 'framer-motion';
-import Marquee from '@/components/Intro/components/marques';
+import Marquee from './components/marques';
 
-export default function Index() {
+export default function IntroMain() {
 
     const firstText = useRef(null);
     const secondText = useRef(null);
@@ -70,7 +70,7 @@ export default function Index() {
         <div className={styles.homeHeader}>
             <div className={styles.backgroundImage} ref={background}>
                 <Image 
-                    src={'/images/background.jpeg'}
+                    src={'/images/bg2.png'}
                     fill={true}
                     alt="background image"
                     priority={true}
@@ -79,7 +79,7 @@ export default function Index() {
             <div className={styles.intro}>
                     <div ref={introImage} data-scroll data-scroll-speed="0.3" className={styles.introImage}>
                         <Image
-                            src={'/images/intro.png'}
+                            src={'/images/hero.png'}
                             alt="intro image"
                             fill={true} 
                             priority={true}
@@ -88,7 +88,6 @@ export default function Index() {
                     <div data-scroll data-scroll-speed="0.7" className="">
                       <Marquee />
                     </div>
-                    {/* <h1 data-scroll data-scroll-speed="0.7">VIMAL BHATT</h1> */}
              </div>
         </div>
         </motion.main>

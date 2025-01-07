@@ -4,7 +4,7 @@
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Optional: Add a background for better visibility */
     margin-top: 2vw;
-    background-color: #ffff;
+    background-color: #141516;
 }
 
 .innterDis {
@@ -16,7 +16,7 @@
 
 .description, .description2{
     position: relative;
-    color: #141516;
+    color: #ffff;
     font-size: 2vw;
     text-transform: uppercase;
 }

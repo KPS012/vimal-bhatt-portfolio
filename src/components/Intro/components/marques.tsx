@@ -18,7 +18,7 @@ export default function Marquee() {
 
     const animation = gsap.to(marquee.current, {
       xPercent: -40, // Move by half the total width (due to duplication)
-      duration: 60, // Adjust speed
+      duration: 100, // Adjust speed
       ease: "linear",
       repeat: -1, // Infinite loop
     });

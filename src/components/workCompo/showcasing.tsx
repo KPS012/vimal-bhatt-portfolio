@@ -15,12 +15,12 @@ interface ShowCasProps {
 const ShowCas: React.FC<ShowCasProps> = ({ H2, b1, b2, b3, b4, p1, p2, p3, p4}) => {
   return (
     <div className="w-[100%] mt-[10vh]">
-        <h2 className="text-[2vh] uppercase font-[600] text-[#141516]">{H2}</h2>
-        <ul className="grid grid-cols-2 place-content-center place-items-center gap-6 mt-[4vw] bg-[#c2c2c2] rounded-[20px] py-[3vw] shadow-xl">
-            <li className="w-[380px] flex flex-wrap text-[16px] text-[#ffff]"><b className="text-[#ffff] text-[4vw] ">{b1}</b><p>{p1}</p></li>
-            <li className="w-[380px] flex flex-wrap text-[16px] text-[#ffff]"><b className="text-[#ffff] text-[4vw] ">{b2}</b><p>{p2}</p></li>
-            <li className="w-[380px] flex flex-wrap text-[16px] text-[#ffff]"><b className="text-[#ffff] text-[4vw] ">{b3}</b><p>{p3}</p></li>
-            <li className="w-[380px] flex flex-wrap text-[16px] text-[#ffff]"><b className="text-[#ffff] text-[4vw] ">{b4}</b><p>{p4}</p></li>
+        <h2 className="text-[2vh] uppercase font-[600] text-[#ffff]">{H2}</h2>
+        <ul className="grid grid-cols-2 place-content-center place-items-center gap-6 mt-[4vw] bg-[#121212] rounded-[20px] py-[3vw] shadow-xl">
+            <li className="w-[380px] flex flex-wrap text-[16px] text-[#c2c2c2]"><b className="text-[#ffff] text-[4vw] ">{b1}</b><p>{p1}</p></li>
+            <li className="w-[380px] flex flex-wrap text-[16px] text-[#c2c2c2]"><b className="text-[#ffff] text-[4vw] ">{b2}</b><p>{p2}</p></li>
+            <li className="w-[380px] flex flex-wrap text-[16px] text-[#c2c2c2]"><b className="text-[#ffff] text-[4vw] ">{b3}</b><p>{p3}</p></li>
+            <li className="w-[380px] flex flex-wrap text-[16px] text-[#c2c2c2]"><b className="text-[#ffff] text-[4vw] ">{b4}</b><p>{p4}</p></li>
         </ul>
     </div>
   );

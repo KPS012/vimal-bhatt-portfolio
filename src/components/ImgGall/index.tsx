@@ -84,6 +84,7 @@ const Column = ({images, y}: any) => {
             <Image 
               src={`/images/${src}`}
               alt='image'
+              className='blur-xl'
               fill
             />
           </div>

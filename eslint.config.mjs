@@ -11,6 +11,12 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"], // Target specific file types
+    rules: {
+      "react/no-unescaped-entities": "off", // Disable this rule
+    },
+  },
 ];
 
 export default eslintConfig;

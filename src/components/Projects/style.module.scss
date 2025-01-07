@@ -1,9 +1,9 @@
 .projects{
-    margin-top: 5vw;
+    margin: 5vw 0;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #ffff;
+    background-color: #141516;
 
     .body{
         max-width: 1200px;
@@ -21,7 +21,7 @@
         position: fixed;
         top: 50%;
         left: 50%;
-        background-color: white;
+        background-color: #141516;
         pointer-events: none;
         overflow: hidden;
         z-index: 3;
@@ -70,9 +70,10 @@
         display: inline-block;
         margin-left: .25em;
         opacity: .6;
-        font-size: .7em;
+        font-size: 1.5em;
         transform: translate(20%, -60%);
         width: 0;
+        color: #ffff;
         position: relative;
         z-index: 1;
     }

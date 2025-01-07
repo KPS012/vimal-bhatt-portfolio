@@ -1,17 +1,17 @@
-import React from 'react'
-import Project from "@/components/Projects/index"
-import H1Card from '@/components/workCompo/heading'
+import React from 'react';
+import type { Metadata } from "next";
+import MyCreations from "./creations"
 
-export default function MyCreations() {
+
+export const metadata: Metadata = {
+  title: "My Creations",
+  description: "Some of my Creations",
+};
+
+export default function AboutPage() {
   return (
-    <div className="flex justify-center items-center mt-[10vw]">
-        <div className="w-[1200px]">
-            <H1Card
-                H1="From Every Step, A Leap Forward: My Journey of Passion and Progress"
-                subHeading="My Creations"
-            />
-            <Project />
-        </div>
-    </div>
+      <div className="">
+        <MyCreations />
+      </div>
   )
 }
