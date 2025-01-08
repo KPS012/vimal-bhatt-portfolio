@@ -9,7 +9,7 @@ import List from '@/components/workCompo/list'
 
 import styles from './styles.module.scss';
 
-export default function DrShardaPage(){
+export default function DrShardaShopifyPage(){
 
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -26,11 +26,11 @@ export default function DrShardaPage(){
                     <div className="flex flex-col justify-center">
                         <H1Card
                             subHeading="Dr. Sharda Ayurveda"
-                            H1="Strategic Redesign for Enhanced Simplicity in Eyowo Mobile Finance App"
+                            H1="Creating a New Design for an Enhanced User Experience and Seamless E-Commerce"
                         />
                         <ImageCard
                             alttitle="Beautiful Landscape"
-                            imageUrl="/images/dr-sharda-ayurveda.png"
+                            imageUrl="/images/dr-sharda-com.png"
                             altText="A beautiful landscape"
                             className="relative mt-[3vh] w-[100%] h-[60vh] rounded-[10px] shadow-xl"                  
                         />

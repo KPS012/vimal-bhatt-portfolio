@@ -25,12 +25,12 @@ export default function DrShardaPage(){
                 <div className="w-[1200px] flex flex-col">
                     <div className="flex flex-col justify-center">
                         <H1Card
-                            subHeading="Dr. Sharda Ayurveda"
-                            H1="Strategic Redesign for Enhanced Simplicity in Eyowo Mobile Finance App"
+                            subHeading="Webitlab"
+                            H1="Custom Landing Page Development to Enhance User Experience and Engagement"
                         />
                         <ImageCard
                             alttitle="Beautiful Landscape"
-                            imageUrl="/images/dr-sharda-ayurveda.png"
+                            imageUrl="/images/webitlab.png"
                             altText="A beautiful landscape"
                             className="relative mt-[3vh] w-[100%] h-[60vh] rounded-[10px] shadow-xl"                  
                         />

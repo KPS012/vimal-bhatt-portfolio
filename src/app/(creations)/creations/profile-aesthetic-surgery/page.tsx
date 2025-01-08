@@ -9,7 +9,7 @@ import List from '@/components/workCompo/list'
 
 import styles from './styles.module.scss';
 
-export default function DrShardaPage(){
+export default function ProAsthPage(){
 
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -25,12 +25,12 @@ export default function DrShardaPage(){
                 <div className="w-[1200px] flex flex-col">
                     <div className="flex flex-col justify-center">
                         <H1Card
-                            subHeading="Dr. Sharda Ayurveda"
-                            H1="Strategic Redesign for Enhanced Simplicity in Eyowo Mobile Finance App"
+                            subHeading="Profile Aesthetic Surger"
+                            H1="A New Era of Beauty: Revamping Profile Aesthetic Surgery for a Sleeker, More Sophisticated Experience"
                         />
                         <ImageCard
                             alttitle="Beautiful Landscape"
-                            imageUrl="/images/dr-sharda-ayurveda.png"
+                            imageUrl="/images/pas.png"
                             altText="A beautiful landscape"
                             className="relative mt-[3vh] w-[100%] h-[60vh] rounded-[10px] shadow-xl"                  
                         />

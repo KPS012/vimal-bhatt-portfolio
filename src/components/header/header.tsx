@@ -11,7 +11,7 @@ export default function Header() {
             <div className="flex gap-10">
                 <Magnetic><Link href="/creations" className="cursor-pointer text-[#ffff] font-[500]">Creations</Link></Magnetic>
                 <Magnetic><Link href="/about" className="cursor-pointer text-[#ffff] font-[500]">About</Link></Magnetic>
-                <Magnetic><Link href="" className="cursor-pointer text-[#ffff] font-[500]">Contact</Link></Magnetic>
+                <Magnetic><a href="mailto:bhattv855@gmail.com" className="cursor-pointer text-[#ffff] font-[500]">Contact</a></Magnetic>
             </div>
         </div>
     </div>
