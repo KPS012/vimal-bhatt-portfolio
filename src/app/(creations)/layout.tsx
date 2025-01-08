@@ -10,14 +10,34 @@ export default function FrontendLayout({
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import('locomotive-scroll')).default;
-      const locomotiveScroll = new LocomotiveScroll();
+      const scrollContainer = document.querySelector(
+        '[data-scroll-container]'
+      ) as HTMLElement | null;
 
-      setTimeout(() => {
-        document.body.style.cursor = 'default';
-        window.scrollTo(0, 0);
-      }, 2000);
+      if (scrollContainer) {
+        const locomotiveScroll = new LocomotiveScroll({
+          el: scrollContainer,
+          smooth: true,
+        });
+
+        setTimeout(() => {
+          document.body.style.cursor = 'default';
+          window.scrollTo(0, 0);
+        }, 2000);
+
+        return () => {
+          // Cleanup on unmount
+          locomotiveScroll.destroy();
+        };
+      } else {
+        console.error('Scroll container not found');
+      }
     })();
   }, []);
 
-  return <>{children}</>;
+  return (
+    <div data-scroll-container>
+      {children}
+    </div>
+  );
 }

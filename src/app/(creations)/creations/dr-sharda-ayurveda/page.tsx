@@ -6,7 +6,6 @@ import H1Card from '@/components/workCompo/heading'
 import HeadPara from '@/components/workCompo/highLights'
 import ImageCard from '@/components/workCompo/imgCard'
 import List from '@/components/workCompo/list'
-import ShowCas from '@/components/workCompo/showcasing'
 
 import styles from './styles.module.scss';
 
@@ -76,22 +75,6 @@ export default function DrShardaPage(){
                         <HeadPara
                             H2="Project Status"
                             Para="As this website serves as an upgrade project from DrShardaayurveda.com, it is still in the process of development and refinement. While significant strides have been made in terms of UX enhancements, on-page SEO optimization, and development contributions, further iterations and adjustments may be required to achieve the desired outcome."
-                        />
-
-                        <ShowCas
-                            H2="Observations"
-
-                            b1="80%"
-                            p1="Struggled to navigate the homepage and locating specific actions proved challenging."
-                            
-                            b2="60%"
-                            p2="Faced difficulties in understanding the process to top up their wallet."
-                            
-                            b3="75%"
-                            p3="Were unaware of services rendered, pointing to a need for better location and communication." 
-                            
-                            b4="65%"
-                            p4="Expressed frustration over the lengthy process required to execute an action."
                         />
                     </div>
                 </div>

@@ -3,7 +3,7 @@ import Magnetic from '@/common/Magnetic/magButton'
 import Logo from "./components/logo"
 import Link from 'next/link'
 
-export default function () {
+export default function Header() {
   return (
     <div className="flex justify-center items-center bg-[#141516]">
         <div className="w-[80vw] h-[80px] flex justify-between items-center">
