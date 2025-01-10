@@ -6,6 +6,7 @@ import H1Card from '@/components/workCompo/heading'
 import HeadPara from '@/components/workCompo/highLights'
 import ImageCard from '@/components/workCompo/imgCard'
 import List from '@/components/workCompo/list'
+import LiveLink from '@/components/workCompo/liveLink';
 
 import styles from './styles.module.scss';
 
@@ -75,6 +76,12 @@ export default function DrShardaPage(){
                         <HeadPara
                             H2="Project Status"
                             Para="As this website serves as an upgrade project from DrShardaayurveda.com, it is still in the process of development and refinement. While significant strides have been made in terms of UX enhancements, on-page SEO optimization, and development contributions, further iterations and adjustments may be required to achieve the desired outcome."
+                        />
+
+                        <LiveLink
+                            H6="Live Link to the Website: "
+                            LinkText= "Dr. Sharda Ayurveda"
+                            Url= "https://www.drshardaayurveda.org/"
                         />
                     </div>
                 </div>
