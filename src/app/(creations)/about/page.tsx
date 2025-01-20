@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Metadata } from "next";
 import About from "./components/about"
+import Footer from '@/components/footer/Footer';
 
 
 export const metadata: Metadata = {
@@ -10,8 +11,9 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-      <div className="">
+      <>
         <About />
-      </div>
+        <Footer />
+      </>
   )
 }

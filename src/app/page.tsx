@@ -6,6 +6,7 @@ import Description from '@/components/Description';
 import Footst from "@/components/footst/Frost";
 import Preloader from '@/components/Preloader/index';
 import MyCrec from "@/components/creations/creationsSection";
+import Footer from "@/components/footer/Footer";
 
 import './style.css';
 
@@ -34,6 +35,7 @@ export default function Home() {
       <Description />
       <MyCrec />
       <Footst />
+      <Footer />
     </main>
   );
 }
