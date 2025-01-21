@@ -1,8 +1,7 @@
-"use client"
-
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import styles from './styles.module.scss';
+
 
 
 export default function Necss() {
@@ -13,7 +12,7 @@ export default function Necss() {
         offset: ["start end", "end start"]
     })
 
-    const height = useTransform(scrollYProgress, [0, 0.8], [50, 0])
+    const height = useTransform(scrollYProgress, [0, 0.9], [50, 0])
 
     return (
         <div ref={container} className={styles.slidingImages}>
